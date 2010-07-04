@@ -20,8 +20,6 @@ ActiveRecord::Base.configurations[:development] = {
 }
 
 ActiveRecord::Base.configurations[:production] = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', "sign_it_production.db")
   :adapter => "mysql",
   :encoding => 'utf8',
   :database =>  'sign_invisible_ch_prod',

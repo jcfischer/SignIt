@@ -219,7 +219,7 @@
 								svg_path = svg_path + x + ',' + y;
 
 								var ms = new Date().getTime();
-								tab_data = tab_data + "[" + ms + ',' + x + ',' + y + '], ';
+								tab_data = tab_data + ms + ',' + x + ',' + y + '|';
 
 								if ((x > 0 && x <= width) && (y > 0 && y <= height))
 								{
@@ -250,7 +250,7 @@
                   var tabular_element = $('#' + tab_input);
                   var tabular_data = tabular_element.val();
 
-                  tabular_element.val(tabular_data + '[' + tab_data + '],');
+                  tabular_element.val(tabular_data + tab_data + '#');
 								}
 							}
 						}
