@@ -1,0 +1,6 @@
+html { font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; background: #eee}
+h1 { text-shadow: 1px 2px 5px #000; color: #fff }
+canvas { background: #fff; border: 1px solid #999; -moz-border-radius: 10px; -webkit-border-radius: 10px }
+a { color: #666; text-decoration: none }
+a:hover { text-decoration: underline; color: #000 }
+

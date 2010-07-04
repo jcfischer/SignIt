@@ -1,0 +1,14 @@
+%h1 Create new Signature
+%p
+  Click and drag your mouse or touch and move your finger in the box below
+
+- form_tag url_for(:signatures, :create), :method => 'post'  do
+
+  %canvas{:id => "drawbox", :width => "600", :height => "300" }
+    %p Your browser does not support &lt;canvas&gt;
+  %br
+  %a{:href => "#", :id => "show-output"} 
+    Show Data
+  #svg-output
+
+  = submit_tag 'Store signature'

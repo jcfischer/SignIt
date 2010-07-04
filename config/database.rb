@@ -22,6 +22,12 @@ ActiveRecord::Base.configurations[:development] = {
 ActiveRecord::Base.configurations[:production] = {
   :adapter => 'sqlite3',
   :database => Padrino.root('db', "sign_it_production.db")
+  :adapter => "mysql",
+  :encoding => 'utf8',
+  :database =>  'sign_invisible_ch_prod',
+  :username => 'user82',
+  :password => "p5s88tz7",
+  :host => '77.95.121.153'
 
 }
 

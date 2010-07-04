@@ -1,0 +1,18 @@
+!!! Strict
+%html
+  %head
+    %title= [@title, "Signature Test application"].compact.join(" | ")
+    = stylesheet_link_tag 'reset', 'application'
+    = javascript_include_tag 'jquery', 'jquery.drawbox', 'application'
+    = yield_content :include
+  %body
+    #header
+      %h1 Signature application
+      %ul.menu
+        %li= link_to 'Signatures', url_for(:signatures, :index)
+    #container
+      #main= yield
+      #sidebar
+    #footer
+      Copyright (c) 2010 Jens-Christian Fischer
+

@@ -1,0 +1,3 @@
+.signature
+  .title= link_to @signature.title, url_for(:signatures, :show, :id => signature)
+  .date= time_ago_in_words(signature.created_at || Time.now) ago
