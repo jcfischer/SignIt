@@ -32,11 +32,13 @@ SignIt.controllers :signatures do
     strokes = params[:"drawbox-tab"].split("#")
     logger.debug strokes.size
     @signature = Signature.create(:title => params[:title], :svg_data => params[:'drawbox-data'])
+    logger.debug @signature.inspect
     @signature.save
+
     strokes.each do |stroke_data|
       @signature.strokes.create(:data => stroke_data)
     end
-    redirect_to url_for(:signatures, :show, :id => @signature.id)
+    redirect url_for(:signatures, :show, :id => @signature.id)
   end
 
   get :new do

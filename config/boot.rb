@@ -15,4 +15,5 @@ end
 Bundler.require(:default, PADRINO_ENV.to_sym)
 puts "=> Located #{Padrino.bundle} Gemfile for #{Padrino.env}"
 
+require 'lib/recognizer'
 Padrino.load!

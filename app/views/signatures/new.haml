@@ -3,6 +3,9 @@
   Click and drag your mouse or touch and move your finger in the box below
 
 - form_tag url_for(:signatures, :create), :method => 'post'  do
+  %label{:for => "title"} Title:
+  %input{:type => "text", :id => "title", :name=> "title"}
+  %br
 
   %canvas{:id => "drawbox", :width => "600", :height => "300" }
     %p Your browser does not support &lt;canvas&gt;

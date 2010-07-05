@@ -104,7 +104,7 @@
 
 						var data_input = id + '-data';
 						var tab_input = id + '-tab';
-						$(this).after('<input type="text" id="' + tab_input + '" name="' + tab_input + '" />');
+						$(this).after('<input type="hidden" id="' + tab_input + '" name="' + tab_input + '" />');
 						$(this).after('<input type="hidden" id="' + data_input + '" name="' + data_input + '" />');
 
 						// Defines all our tracking variables
